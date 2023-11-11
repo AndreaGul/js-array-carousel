@@ -39,8 +39,20 @@ viceversa per poter scorrere a ritroso se elementActive è maggiore di 0 il clic
 
 BONUS 1:
 Aggiungere il ciclo infinito del carosello. Ovvero se è attiva la prima immagine e l'utente clicca la freccia per andare all’immagine precedente, dovrà comparire l’ultima immagine dell’array e viceversa.
+
+9 possiamo inserire una condizione dove se elementActive è uguale alla lunghezza di domItem,
+
+all'item attuale leviamo la classe active,
+poniamo elementActive uguale a 0 e all'item con la classe active sarà quello in posizione 0 usando elementActive come indice di posizione nell'insieme di nodi
+
+10 viceversa se elementActive è uguale a 0
+
+all'item attuale leviamo la classe active,
+poniamo elementActive uguale alla lunghezza del domItem e all'item con la classe active sarà quello in posizione (domItem.length) usando elementActive come indice di posizione nell'insieme di nodi
+
 BONUS 2:
 Aggiungere la visualizzazione di tutte le thumbnails sulla destra dell’immagine grande attiva, come nello screenshot proposto. Tutte le miniature avranno un layer di opacità scura, tranne quella corrispondente all’immagine attiva, che invece avrà un bordo colorato.
 Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di miniatura attiva.
+
 BONUS 3:
 Al click sulla thumbnail, viene visualizzata l'immagine selezionata;
