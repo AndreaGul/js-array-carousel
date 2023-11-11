@@ -53,8 +53,6 @@ poniamo elementActive uguale alla lunghezza del domItem e all'item con la classe
 BONUS 2:
 Aggiungere la visualizzazione di tutte le thumbnails sulla destra dell’immagine grande attiva.
 
-//html e css
-
 creo un box che la stessa altezza del suo contenitore ma ha una larghezza definita
 
 il box ha position abosule ed è posizionato nel top=0 right=0 rispetto al contenitore items
@@ -66,16 +64,16 @@ questo box avra una altezza e larghezza definita
 
 le immagini hanno la larghezza del box piccolo caso strabordino useremmo object fit : cover
 
+Tutte le miniature avranno un layer di opacità scura, tranne quella corrispondente all’immagine attiva, che invece avrà un bordo colorato.
+
 per rendere le immmagini scure creremo un elemento che avra una classe no-focus che avrà le dimensioni del box piccolo, sarà position absolute rispetto al box piccolo sarà posizionato in alto a destra e avra un colore nero con opacita a 0.5
 
 nel caso dell'immagine on-focus aggiungeremo un bordo al box piccolo
 
-//html e css
-
-//js
-
-Tutte le miniature avranno un layer di opacità scura, tranne quella corrispondente all’immagine attiva, che invece avrà un bordo colorato.
 Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di miniatura attiva.
+
+nelle condizioni in cui cambio la posizione della classe active, possiamo rimuovere la classe no-focus e inserire la classe on-focus delle miniature a destra.
+ci creiammo anche qui una variabile domMiniature con tutte le miniature dentro e la usiamo come domItem
 
 BONUS 3:
 Al click sulla thumbnail, viene visualizzata l'immagine selezionata;
