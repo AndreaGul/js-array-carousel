@@ -51,7 +51,30 @@ all'item attuale leviamo la classe active,
 poniamo elementActive uguale alla lunghezza del domItem e all'item con la classe active sarà quello in posizione (domItem.length) usando elementActive come indice di posizione nell'insieme di nodi
 
 BONUS 2:
-Aggiungere la visualizzazione di tutte le thumbnails sulla destra dell’immagine grande attiva, come nello screenshot proposto. Tutte le miniature avranno un layer di opacità scura, tranne quella corrispondente all’immagine attiva, che invece avrà un bordo colorato.
+Aggiungere la visualizzazione di tutte le thumbnails sulla destra dell’immagine grande attiva.
+
+//html e css
+
+creo un box che la stessa altezza del suo contenitore ma ha una larghezza definita
+
+il box ha position abosule ed è posizionato nel top=0 right=0 rispetto al contenitore items
+
+le frecce saranno inserite in questo box
+
+creaaom un'altro box che conttera l'immagine e il no-focus
+questo box avra una altezza e larghezza definita
+
+le immagini hanno la larghezza del box piccolo caso strabordino useremmo object fit : cover
+
+per rendere le immmagini scure creremo un elemento che avra una classe no-focus che avrà le dimensioni del box piccolo, sarà position absolute rispetto al box piccolo sarà posizionato in alto a destra e avra un colore nero con opacita a 0.5
+
+nel caso dell'immagine on-focus aggiungeremo un bordo al box piccolo
+
+//html e css
+
+//js
+
+Tutte le miniature avranno un layer di opacità scura, tranne quella corrispondente all’immagine attiva, che invece avrà un bordo colorato.
 Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di miniatura attiva.
 
 BONUS 3:
