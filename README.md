@@ -77,3 +77,15 @@ ci creiammo anche qui una variabile domMiniature con tutte le miniature dentro e
 
 BONUS 3:
 Al click sulla thumbnail, viene visualizzata l'immagine selezionata;
+
+considerazioni
+devo trovare un metodo che mi restituisce il valore che mi puo indicare la posizione dell'immagine he ho cliccato
+
+potrei fare un ciclo for dove controllo ad ogni ciclo quale box piccolo è stato cliccato tramite event listener
+
+utilizzando l'indice del ciclo vado ad evidenziare l'immagine cliccata in quel momento
+
+quindi all'immagine in posizione elementActive vado a levare la classe active.
+elementActive diventa=i e in domItem[elementActiv] vado a inserire la classe active
+
+la stessa cosa la faccio per le miniature usando domMiniature e on-focus e no-focus
