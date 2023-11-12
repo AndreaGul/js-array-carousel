@@ -72,12 +72,12 @@ nel caso dell'immagine on-focus aggiungeremo un bordo al box piccolo
 Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di miniatura attiva.
 
 nelle condizioni in cui cambio la posizione della classe active, possiamo rimuovere la classe off-focus e inserire la classe on-focus delle miniature a destra.
-ci creiammo anche qui una variabile domMiniature con tutte le miniature dentro e la usiamo come domItem
+ci creiammo anche qui una variabile domSideBox con tutte le miniature dentro e la usiamo come domItem
 
 BONUS 3:
 Al click sulla thumbnail, viene visualizzata l'immagine selezionata;
 
-considerazioni
+ipotesi svolgimento esercizio
 devo trovare un metodo che mi restituisce il valore che mi puo indicare la posizione dell'immagine he ho cliccato
 
 potrei fare un ciclo for dove controllo ad ogni ciclo quale box piccolo è stato cliccato tramite event listener
@@ -88,3 +88,6 @@ quindi all'immagine in posizione elementActive vado a levare la classe active.
 elementActive diventa=i e in domItem[elementActiv] vado a inserire la classe active
 
 la stessa cosa la faccio per le miniature usando domMiniature e on-focus e no-focus
+
+finalità
+al click sull'immagine vado a ripetere le varie rimozioni e aggiunte di classi, elementActive cambia valore rispetto alla posizione nell'insieme dei nodi

@@ -61,8 +61,6 @@ for (let i = 0; i < img.length; i++) {
   }
 }
 
-console.log(elementSideBox);
-
 //dichiariamo una variabile domItem che sara definita con tutti gli elementi che hanno classe item
 
 const domItem = document.querySelectorAll('.items>.item');
@@ -70,6 +68,82 @@ const domItem = document.querySelectorAll('.items>.item');
 // Bonus 2
 const domSideBox = document.querySelectorAll('.side-box> .item > div');
 // BONUS 2
+
+//BONUS 3
+const domClickSideBox = document.querySelectorAll('.side-box> .item ');
+console.log(domClickSideBox[1]);
+
+domClickSideBox[0].addEventListener('click', function () {
+  domItem[elementActive].classList.remove('active');
+
+  domSideBox[elementActive].classList.remove('on-focus');
+  domSideBox[elementActive].classList.add('off-focus');
+
+  elementActive = 0;
+
+  domItem[elementActive].classList.add('active');
+
+  domSideBox[elementActive].classList.remove('off-focus');
+  domSideBox[elementActive].classList.remove('on-focus');
+});
+
+domClickSideBox[1].addEventListener('click', function () {
+  domItem[elementActive].classList.remove('active');
+
+  domSideBox[elementActive].classList.remove('on-focus');
+  domSideBox[elementActive].classList.add('off-focus');
+
+  elementActive = 1;
+
+  domItem[elementActive].classList.add('active');
+
+  domSideBox[elementActive].classList.remove('off-focus');
+  domSideBox[elementActive].classList.remove('on-focus');
+});
+
+domClickSideBox[2].addEventListener('click', function () {
+  domItem[elementActive].classList.remove('active');
+
+  domSideBox[elementActive].classList.remove('on-focus');
+  domSideBox[elementActive].classList.add('off-focus');
+
+  elementActive = 2;
+
+  domItem[elementActive].classList.add('active');
+
+  domSideBox[elementActive].classList.remove('off-focus');
+  domSideBox[elementActive].classList.remove('on-focus');
+});
+
+domClickSideBox[3].addEventListener('click', function () {
+  domItem[elementActive].classList.remove('active');
+
+  domSideBox[elementActive].classList.remove('on-focus');
+  domSideBox[elementActive].classList.add('off-focus');
+
+  elementActive = 3;
+
+  domItem[elementActive].classList.add('active');
+
+  domSideBox[elementActive].classList.remove('off-focus');
+  domSideBox[elementActive].classList.remove('on-focus');
+});
+
+domClickSideBox[4].addEventListener('click', function () {
+  domItem[elementActive].classList.remove('active');
+
+  domSideBox[elementActive].classList.remove('on-focus');
+  domSideBox[elementActive].classList.add('off-focus');
+
+  elementActive = 4;
+
+  domItem[elementActive].classList.add('active');
+
+  domSideBox[elementActive].classList.remove('off-focus');
+  domSideBox[elementActive].classList.remove('on-focus');
+});
+
+//BONUS 3
 
 // utilizzando il valore di elementActive noi possiamo spostarci tra i nodi contenuti in domItem
 /*Considerazioni
