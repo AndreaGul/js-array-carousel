@@ -54,26 +54,24 @@ All'item con la classe active sarà quello in posizione (domItem.length) usando 
 BONUS 2:
 Aggiungere la visualizzazione di tutte le thumbnails sulla destra dell’immagine grande attiva.
 
-creo un box che la stessa altezza del suo contenitore ma ha una larghezza definita
+Creo un side-box che la stessa altezza del suo contenitore ma ha una larghezza definita.
 
-il box ha position abosule ed è posizionato nel top=0 right=0 rispetto al contenitore items
+Il side-box ha position abosule ed è posizionato nel top=0 right=0 rispetto al contenitore items.
 
-le frecce saranno inserite in questo box
+Le frecce saranno inserite in questo side-box.
 
-creaaom un'altro box che conttera l'immagine e il no-focus
-questo box avra una altezza e larghezza definita
-
-le immagini hanno la larghezza del box piccolo caso strabordino useremmo object fit : cover
+l'item contterà l'immagine e il off-focus
+questo item avra una altezza e larghezza definita.
 
 Tutte le miniature avranno un layer di opacità scura, tranne quella corrispondente all’immagine attiva, che invece avrà un bordo colorato.
 
-per rendere le immmagini scure creremo un elemento che avra una classe no-focus che avrà le dimensioni del box piccolo, sarà position absolute rispetto al box piccolo sarà posizionato in alto a destra e avra un colore nero con opacita a 0.5
+per rendere le immmagini scure creeremo un elemento che avra una classe off-focus che avrà le dimensioni del box piccolo, sarà position absolute rispetto al box piccolo sarà posizionato in alto a destra e avra un colore nero con opacita a 0.5
 
 nel caso dell'immagine on-focus aggiungeremo un bordo al box piccolo
 
 Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di miniatura attiva.
 
-nelle condizioni in cui cambio la posizione della classe active, possiamo rimuovere la classe no-focus e inserire la classe on-focus delle miniature a destra.
+nelle condizioni in cui cambio la posizione della classe active, possiamo rimuovere la classe off-focus e inserire la classe on-focus delle miniature a destra.
 ci creiammo anche qui una variabile domMiniature con tutte le miniature dentro e la usiamo come domItem
 
 BONUS 3:
