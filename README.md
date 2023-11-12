@@ -7,7 +7,7 @@ Dato un array contenente una lista di cinque immagini, creare un carosello come 
 MILESTONE 1
 Rimuoviamo tutto il markup statico e inseriamo tutte le immagini dinamicamente servendoci dell'array fornito e un semplice ciclo for che concatena un template literal.
 
-1 dichiaro una variiiabile che sarà definita con una array che al suo interno avra i nomi delle immagini
+1 dichiaro una variabile che sarà definita con una array che al suo interno avra i nomi delle immagini
 
 2 tramite un inner html nella classe items inserisco un template literal che conterra un div con classe item che a sua volta avrà un immagine al suo interno
 
@@ -17,7 +17,7 @@ Rimuoviamo tutto il markup statico e inseriamo tutte le immagini dinamicamente s
 Tutte le immagini saranno nascoste, tranne la prima, che avrà una classe specifica che la renderà visibile.
 
 4 prima e fuori dal ciclo for dichiaro una variabile active e la definisco con il valore 0.
-Tramite una condizione all'interno del ciclo vado a inserire la classe active in item con classList.add grazie alla posizione attuale data da i(contatore del ciclo) e elementActive
+Tramite una condizione all'interno del ciclo vado a inserire la classe active in item, grazie alla posizione attuale data da i(contatore del ciclo) e elementActive
 
 MILESTONE 2
 Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
