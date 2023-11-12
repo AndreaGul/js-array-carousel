@@ -1,8 +1,6 @@
 'use strict';
 
-const elementItems = document.getElementById('items');
-
-console.log(elementItems);
+const elementItems = document.querySelector('.items');
 
 //  dichiaro una variabile che sarà definita con una array che al suo interno avra i nomi delle immagini
 
@@ -15,7 +13,7 @@ let elementActive = 0;
 // (la quantita di cicli sarà definita dalla lunchezza dell'array immagini)
 
 for (let i = 0; i < img.length; i++) {
-  // tramite un inner html nella classe items inserisco un template literal che conterra un div con classe item che a sua volta avrà un immagine al suo interno
+  // con un inner html nella classe items inserisco un template literal che conterra un div con classe item che a sua volta avrà un immagine al suo interno
 
   // Tramite una condizione all'interno del ciclo vado a inserire la classe active in item grazie alla posizione attuale data da i(contatore del ciclo) e elementActive
   if (i === elementActive) {
@@ -36,3 +34,55 @@ for (let i = 0; i < img.length; i++) {
         `;
   }
 }
+
+//dichiariamo una variabile domItem che sara definita con tutti gli elementi che hanno classe item
+
+const domItem = document.querySelectorAll('.item');
+
+console.log(domItem);
+
+// utilizzando il valore di elementActive noi possiamo spostarci tra i nodi contenuti in domItem
+/*Considerazioni
+    grazie al loop precedente la classe active e sempre presente sul primo item  grazie al controllo fatto con elementActive
+*/
+
+//Grazie ad event listener possiamo scatenare questo evento una volta cliccata la freccia
+const next = document.querySelector('.next');
+
+next.addEventListener('click', function () {
+  // Dobbiamo tener conto della quantita di elementi contenuti in domItem per fermare lo scorrimento delle immagini una volta arrivati all'ultima
+
+  if (elementActive < domItem.length - 1) {
+    //nella posizione attuale data da domItem[elementActive] andiamo a rimuovere la classe active con classList.remove
+
+    domItem[elementActive].classList.remove('active');
+
+    // arrivati a cio incrementiamo il valore di elementActive
+
+    elementActive++;
+
+    //e andiamo a inserire nelle classi di quest'alto elemento domItem[elmentActive] la classe active
+
+    domItem[elementActive].classList.add('active');
+  }
+});
+
+const prev = document.querySelector('.prev');
+
+prev.addEventListener('click', function () {
+  // Dobbiamo tener conto della quantita di elementi contenuti in domItem per fermare lo scorrimento delle immagini una volta arrivati alla prima
+
+  if (elementActive > 0) {
+    //nella posizione attuale data da domItem[elementActive] andiamo a rimuovere la classe active con classList.remove
+
+    domItem[elementActive].classList.remove('active');
+
+    // arrivati a cio decrementiamo il valore di elementActive
+
+    elementActive--;
+
+    //e andiamo a inserire nelle classi di quest'alto elemento domItem[elmentActive] la classe active
+
+    domItem[elementActive].classList.add('active');
+  }
+});

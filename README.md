@@ -24,17 +24,17 @@ Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, c
 
 5 dichiariamo una variabile domItem che sara definita con tutti gli elementi che hanno classe item(grazie a querySelectAll)
 utilizzando il valore di elementActive noi possiamo spostarci tra i nodi contenuti in domItem
-e cosi facendo
 
 Considerazioni
 grazie al loop precedente la classe active e sempre presente sul primo item grazie al controllo fatto con elementActive
 
-6 nella posizione attuale data da domItem[elementActive] andiamo a rimuovere la classe active con classList.remove
-arrivati a cio incrementiamo il valore di elementActive e andiamo a inserire nelle classi di quest'alto elemento domItem[elmentActive] la classe active
+6 nella posizione attuale data da domItem[elementActive] andiamo a rimuovere la classe active con classList.remove.
+arrivati a cio incrementiamo il valore di elementActive
+Poi andiamo a inserire nelle classi di quest'alto elemento domItem[elmentActive] la classe active.
 
 7 Grazie ad event listener possiamo scatenare questo evento una volta cliccata la freccia
 
-8 Dobbiamo tener conto della quantita di elementi contenuti in domItem per fermare lo scorrimento delle immagini una volta arrivati all'ultima imponendo una condizione che fino alla lunghezza di domItem - 1 è minore di elementActive il click fa attivare l'evento.
+8 Dobbiamo tener conto della quantita di elementi contenuti in domItem per fermare lo scorrimento delle immagini una volta arrivati all'ultima imponendo una condizione che finche elementActive è minore della lunghezza di domItem - 1, il click fa attivare l'evento.
 viceversa per poter scorrere a ritroso se elementActive è maggiore di 0 il click fa attivare l'evento
 
 BONUS 1:
